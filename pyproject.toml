@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "saa"
+version = "0.1.0"
+description = "saa"
+authors = []
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+nonebot2 = "^2.0.0.a1"
+nb-cli = "^0.1.0"
+
+[tool.poetry.dev-dependencies]
+nonebot-test = "^0.1.0"
+
+[nonebot.plugins]
+plugins = ["nonebot_plugin_picsearcher", "nonebot_plugin_songpicker2", "nonebot_plugin_wordbank"]
+plugin_dirs = ["src/plugins"]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
